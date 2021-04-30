@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Shoppies</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/7aa840a654.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  
+    <section class="banner hidden">
+      <p>You have made all 5 nominations</p>
+    </section>
+
+   
+    <main>
+      <section class="container">
+        <h1> The Shoppies </h1>
+        <section class="inputSection" id="">
+          <label for="Title">Movie title</label>
+          <input type="text" name="" value="" placeholder="🔎" id="titleInput" class="titleInput">
+        </section>
+        <br>
+        <section class="outputContainer hidden" id="output">
+          <section id="results" class="results">
+            <p id="inputSearch"></p>
+            <ul class="resultsList movieList">
+            </ul>
+            <section class="loader hidden" id=""> 
+            </section>
+            <section class="nothingFound hidden">
+              <p>No matching found</p>
+            </section>
+          </section>
+
+          <section id="nominations" class="nominations">
+            <section class="nominationHeaderSection">
+              <p class="nominationTitle">Nominations</p>
+              <!-- <p class="countdown">5 votes left!</p> -->
+            </section>
+            <ul class="nominationsList">
+
+            </ul>
+
+            <section class="complete hidden" id="complete">
+              <button type="button" name="submit" class="submitButton">Submit</button>
+            </section>
+
+          </section>
+
+        </section>
+      </section>
+
+    </main>
+
+    <script type="text/javascript" src="js/shoppies.js">
+    </script>
+  </body>
+</html>
